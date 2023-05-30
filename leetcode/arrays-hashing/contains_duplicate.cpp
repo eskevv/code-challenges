@@ -1,12 +1,15 @@
 #include "../global_headers.hpp"
 
+// Approach
+// simply use hashmaps to check the count of each element
+
 auto contains_duplicate(std::vector<int> &nums) -> bool {
-  std::unordered_set<int> numSet;
+  std::unordered_set<int> num_set;
   for (const auto &num : nums) {
-    if (numSet.count(num) > 0) {
+    if (num_set.count(num) > 0)
       return true;
-    }
-    numSet.insert(num);
+
+    num_set.insert(num);
   }
   return false;
 }

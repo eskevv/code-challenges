@@ -1,5 +1,10 @@
 #include "../global_headers.hpp"
 
+// Approach:
+// hashmap stores [value:index] of inputs
+// if the difference of target - value is already stored in the map -> return the corresponding indeces...
+// the current index and the index of the difference value
+
 auto two_sum(std::vector<int> &nums, int target) -> std::vector<int> {
   std::unordered_map<int, size_t> numbers;
   for (size_t i{0}; i < nums.size(); i++) {

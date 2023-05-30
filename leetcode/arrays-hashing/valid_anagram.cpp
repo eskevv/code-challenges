@@ -1,5 +1,8 @@
 #include "../global_headers.hpp"
 
+// Approach:
+// crate hashmaps out of each string to compare if they are anagrams
+
 auto counter(std::string elements) -> std::unordered_map<char, int> {
   std::unordered_map<char, int> output;
   for (auto &&i : elements)
