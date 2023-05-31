@@ -1,4 +1,5 @@
-#include "../global_headers.hpp"
+#include <string>
+#include <unordered_map>
 
 // Approach:
 // crate hashmaps out of each string to compare if they are anagrams
