@@ -1,6 +1,7 @@
 #include "regex.hpp"
 #include <iostream>
 
+
 auto main() -> int {
   Regex regex{};
 
